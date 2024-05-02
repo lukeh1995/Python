@@ -75,7 +75,7 @@ alive_trees = alive_trees[alive_trees['tree_dbh'] > 0]
 alive_trees.describe()
 #Explore health variable
 alive_trees['health'].value_counts()
-
+ d
 #Seperate into X and Y variables
 col = alive_trees.pop("health")
 alive_trees.insert(0, col.name, col)
